@@ -1,0 +1,38 @@
+html {
+  direction: rtl;
+}
+.side-menu {
+  right: 0 !important;
+}
+.nav-bar.admin {
+  left: 0;
+  right: 56px !important;
+}
+.table th,
+.table td {
+  text-align: right !important;
+}
+.main-panel.side-opened .side-menu{
+  right: 0px !important;
+}
+.uil-signout,
+.uil-angle-right,
+.uil-arrow-left{
+  transform: rotateY(180deg) !important;
+}
+.uil-angle-left-b,
+.uil-angle-right-b{
+  transform: rotate(180deg) !important;
+}
+
+@media (max-width: 600px) {
+  .side-menu {
+    right: -56px !important;
+  }
+  .nav-bar {
+    right: 0 !important;
+  }
+  .main-panel {
+    padding-inline-end: 0px;
+  }
+}

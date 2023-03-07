@@ -1,0 +1,26 @@
+@media (max-width: 575.98px) {
+  .page {
+    padding: 12px;
+  }
+  .side-menu {
+    left: -120px !important;
+  }
+  .nav-bar {
+    left: 0 !important;
+  }
+  .main-panel.admin  {
+    padding-inline-start: 0px;
+  }
+  .card-content {
+    padding: 12px;
+  }
+  .btn-without-icon {
+    padding: 8px;
+  }
+  .btn-with-icon {
+    padding: 8px;
+  }
+  .loading-block .loading-container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "shared": {
+    "id": "الرقم",
+    "product": "المنتج",
+    "rate": "المعدل",
+    "count": "العدد",
+    "description": "الوصف",
+    "image": "الصورة",
+    "all-categories": "كل الفئات",
+    "loading": "جاري التحميل",
+    "loading-describ": "جاري تحميل البيانات",
+    "complete": "إنهاء",
+    "name": "الإسم",
+    "username": "اسم المستخدم",
+    "full-name": "الإسم بالكامل",
+    "password": "كلمة المرور",
+    "serial-number": " الرقم التسلسلي",
+    "email": "البريد الالكتروني",
+    "log-out": "تسجيل خروج",
+    "home": "رئيسيه",
+    "cancel": "الغاء",
+    "back": "رجوع",
+    "edit": "تعديل",
+    "date": "تاريخ",
+    "update": "تحديث",
+    "all": "كل",
+    "yes": "نعم",
+    "no": "لا",
+    "save": "حفظ",
+    "create": "انشاء",
+    "all-data": "كل البيانات",
+    "confirm": "تأكيد",
+    "discard": "تجاهل",
+    "continue": "استمرار",
+    "delete": "حذف",
+    "view": "مشاهده",
+    "english": "انجليزي",
+    "arabic": "عربي",
+    "street": "شارع",
+    "new": "جديد",
+    "price": "السعر",
+    "login": "تسجيل الدخول",
+
+    "delete-confirmation": {
+      "message": "هل أنت متأكد من حذف هذا العنصر",
+      "title": "حذف عنصر"
+    },
+    "select-category": "اختر الفئة",
+    "categories": "الفئات",
+    "LE": "",
+    "l-e": "جنيه",
+    "sign-in": "تسجيل الدخول"
+  },
+  "search": {
+    "enter-id": "ادخل الرقم",
+    "enter-name": "ادخل الاسم"
+  },
+  "menu": {
+    "product": "منتج"
+  },
+  "product": {
+    "title": "المنتجات",
+    "delete-product": "حذف المنتج"
+  },
+  "forbidden": {
+    "previous-page": "الصفحة السابقة",
+    "body": "آسف. \nلكن ليس لديك إذن للوصول إلى هذه الصفحة."
+  }
+}

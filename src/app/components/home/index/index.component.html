@@ -1,0 +1,47 @@
+
+<div class="page ">
+  <div class="h-100" *ngIf="!page.isPageLoaded">
+    <loading title="{{'shared.loading'|translate}}" [inline]="false"></loading>
+  </div>
+  <ng-container *ngIf="page.isPageLoaded">
+    <div class="d-sm-flex align-items-start container-xl py-5 px-4 px-md-5 ">
+    <div class="card filter-section align-items-center justify-content-center me-3 p-3">
+      <p class="font-20 bold">{{'shared.categories'|translate}}</p>
+      <div class="d-flex flex-nowrap d-sm-block mb-3 mb-sm-0  mt-3 scroll-x hide-scroll w-100">
+        <p class="filter-item text-nowrap me-3 me-sm-0 mt-sm-3" *ngFor="let item of categoryList" (click)="selectedCategory = item" 
+          [class.selected]="selectedCategory == item" >{{item | translate}}</p>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3 remain-w">
+      <div class="col" *ngFor="let item of getItems()">
+        <div class="card product-card pointer animate" (click)="showDetails(item)">
+          <img [src]="item.image" class="radius-8 mb-3">
+          <p class="font-14 bold mt-auto">{{item.title}}</p>
+          <p class="font-14 mt-2">{{item.price|price}} {{'shared.l-e' | translate}}</p>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </ng-container>
+  
+</div>
+<ng-template #deleteTemplate>
+  <div class="modal-content confirm-modal">
+    <div class="modal-body">
+      <div class="card product-card p-0">
+        <img [src]="selectedItem.image" class="radius-8 mb-3">
+        <p class="font-14 bold mt-auto">{{selectedItem.title}}</p>
+        <div class="d-flex align-items-center mt-2">
+          <p class="font-14 me-2">{{selectedItem.price|price}} {{'shared.l-e' | translate}}</p>
+          <p class="font-14 c-r200 ms-auto">{{selectedItem.category}}</p>
+        </div>
+        <div class="d-flex align-items-center mt-2">
+          <p class="font-14 me-2">{{'shared.rate' | translate}}: {{selectedItem.rating.rate}}</p>
+          <p class="font-14 ms-auto">{{'shared.count' | translate}}: {{selectedItem.rating.count}}</p>
+        </div>
+        <p class="font-14 mt-2">{{selectedItem.description}}</p>
+      </div>
+    </div>
+  </div>
+</ng-template>

@@ -1,2 +1,1 @@
-# Digi-Visions
-Digi Visions task 
+# digi-visions

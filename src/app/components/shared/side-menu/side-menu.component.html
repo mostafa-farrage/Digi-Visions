@@ -1,0 +1,24 @@
+<div class="side-menu relative no-print" (mouseenter)="enterORLeaveSideMenu(true)"
+  (mouseleave)="enterORLeaveSideMenu(false)">
+  <a class="side-header d-flex">
+    <img src="/assets/icon/times-white.svg" class="rect-14 d-sm-none c-white" (click)="closeSideMenu()" />
+  </a>
+  <ul class="side-list d-flex flex-column accordion" id="accordionExample">
+    <li class="nav-item accordion-header first-level" id="headingProduct"
+      [ngClass]="{ active: getCurrentMoudleName() == 'product' }">
+      <a class="nav-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseheadingProduct"
+        aria-expanded="false" aria-controls="collapseheadingProduct" [routerLink]="['/product']">
+        <i class="uil uil-box"></i>
+        <p class="nav-content ">
+          {{'menu.product'|translate}}
+        </p>
+      </a>
+    </li>
+  </ul>
+  <div class="side-footer">
+    <button class="btn d-flex align-items-center c-ff" (click)="logout()">
+      <i class="uil uil-power font-20 c-ff d-flex"></i>
+      <span class="c-ff ms-2 side-fotter-content font-14">{{'shared.log-out'|translate}}</span>
+    </button>
+  </div>
+</div>
